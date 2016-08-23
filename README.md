@@ -9,4 +9,6 @@ Functionalities
 - sound player
 - automatic sync with a MySQL database through PHP
 
+![alt text](/lib/screencap.jpg)
+
 Made with Adobe Air for desktop.
