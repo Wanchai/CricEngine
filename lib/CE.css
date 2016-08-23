@@ -1,0 +1,29 @@
+Button{
+	cornerRadius: 0;
+	paddingLeft: 3;
+	paddingRight: 3;
+	color: #000000;
+	textRollOverColor: #000000;
+	borderColor: #0099ff;
+	themeColor: #0099ff;
+	fontSize: 11;
+	fontWeight: normal;
+}
+Label{
+	color:#ffffff;
+}
+
+@font-face{
+	src: url("C:\\Windows\\Fonts\\verdana.ttf");
+	fontFamily: Verdana;
+}
+@font-face{
+	src: url("C:\\Windows\\Fonts\\verdanab.ttf");
+	fontFamily: Verdana;
+	fontWeight: bold;
+}
+@font-face{
+	src: url("C:\\Windows\\Fonts\\verdanai.ttf");
+	fontFamily: Verdana;
+	fontStyle: italic;
+}

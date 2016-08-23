@@ -1,0 +1,49 @@
+.myVBox{
+	backgroundColor: #000000;
+	paddingTop: 0;
+	paddingBottom: 0;
+	paddingLeft: 3;
+	paddingRight: 3;
+	verticalGap:0;
+	verticalAlign:middle;
+}
+.myHBox{
+	horizontalGap: 4;
+	verticalAlign: middle;
+	borderStyle: none;
+	paddingTop: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingBottom: 0;
+}
+.myProgressBar {
+   borderColor: #ffffff;
+   barColor: #990000;
+   trackColors: #cccccc, #ffffff;
+   color: #cccccc;
+   paddingLeft: 0;
+   paddingRight: 0;
+   textIndent: 0;
+   letterSpacing: 0;
+   trackHeight: 11;
+   verticalGap: 0;
+}
+HSlider.myHSlider {
+	thumbUpSkin: Embed(source="CricSoundBtn.swf", symbol="thumb_skin");
+	thumbOverSkin: Embed(source="CricSoundBtn.swf", symbol="thumb_skin_over");
+	thumbDownSkin: Embed(source="CricSoundBtn.swf", symbol="thumb_skin_down");
+	trackSkin: Embed(source="CricSoundBtn.swf", symbol="track_skin");
+	showTrackHighlight: true;
+	themeColor: #999999;
+	trackPaddingLeft:0;
+}
+Button.play {
+	upSkin: Embed(source="CricSoundBtn.swf", symbol="play_up");
+	overSkin: Embed(source="CricSoundBtn.swf", symbol="play_over");
+	downSkin: Embed(source="CricSoundBtn.swf", symbol="play_down");
+}
+Button.pause {
+	upSkin: Embed(source="CricSoundBtn.swf", symbol="pause_up");
+	overSkin: Embed(source="CricSoundBtn.swf", symbol="pause_over");
+	downSkin: Embed(source="CricSoundBtn.swf", symbol="pause_down");
+}

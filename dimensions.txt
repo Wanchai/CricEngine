@@ -1,0 +1,5 @@
+Scene 960*540
+
+Bloc texte11 largeur = 290
+
+Bloc texte14 largeur = 320

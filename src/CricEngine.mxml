@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<s:Application 
+    xmlns:fx="http://ns.adobe.com/mxml/2009" 
+    xmlns:s="library://ns.adobe.com/flex/spark" 
+    xmlns:mx="library://ns.adobe.com/flex/mx" 
+	xmlns:local="comp.*"
+    width="700" height="700" applicationComplete="init()">
+		
+	<fx:Script source="as3/Main.as" />
+	
+    <s:Panel title="My Application" width="100%">
+         <s:layout>
+           <s:VerticalLayout paddingTop="10" horizontalAlign="center"/> 
+        </s:layout>
+		
+		<s:HGroup gap="1">
+			<s:TextInput id="connectName" width="200" text="moi" /><s:Button label="Connect" x="10" y="35" click="connectServ()" />
+			<mx:Label id="connectResult" />
+		</s:HGroup>
+		
+		<s:HGroup gap="1">
+			<s:TextInput id="myB" width="200" /><s:Button label="Send Me" x="10" y="35" click="btnComm()" />
+		</s:HGroup>
+		
+		<mx:DataGrid id="dg" color="0x323232" width="100%" />
+	
+    </s:Panel>
+
+</s:Application>

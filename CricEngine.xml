@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/1.5.3">
+    <id>CricEngine</id>
+    <version>0.3.61.2</version>
+    <filename>CricEngine</filename>
+    <initialWindow>
+        <content>TextApp.swf</content>
+        <visible>true</visible>
+        <systemChrome>standard</systemChrome>
+        <transparent>false</transparent>
+        <width>1020</width>
+        <height>650</height>
+    </initialWindow>
+	<icon>
+        <image16x16>lib/smallIcon.png</image16x16>
+        <image32x32>lib/mediumIcon.png</image32x32>
+        <image48x48>lib/bigIcon.png</image48x48>
+        <image128x128>lib/biggestIcon.png</image128x128>
+    </icon>
+</application>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"  xmlns:local="comp.*"
+	verticalAlign="top" backgroundColor="0xFFFFFF"  title="Cric Engine" verticalGap="2"
+    paddingLeft="0" paddingTop="0" paddingBottom="0" paddingRight="0" applicationComplete="connectBox();" horizontalAlign="center"
+	backgroundGradientColors="[0x000000, 0xFFFFFF]" frameRate="60">
+
+	<mx:Style source="lib/CE.css" />
+	<mx:Script source="as3/Main.as" />
+
+	<mx:XMLList id="actionMenu">
+        <node label="Ajouter une page" />
+        <node label="Ajouter une image" />
+        <node label="Ajouter une couleur"/>
+        <node label="Ajouter un fond"/>
+        <node label="Supprimer le fond"/>
+        <node label="Ajouter un son"/>
+    </mx:XMLList>
+
+	<mx:ApplicationControlBar id="myDock" dock="true" paddingTop="2" paddingBottom="0" bottom="5" borderStyle="none">
+		<mx:Button label="Texte 11px" click="showRte(11);"/>
+		<!-- <mx:Button label="Texte 14px" click="showRte(14);"/>  -->
+		<mx:Button label="Titre" click="showRte(26);"/>
+		<mx:Button id="btnValid" label="Valider" click="addText(rte);" visible="false" />
+		<mx:Spacer width="10%" />
+		<mx:PopUpMenuButton id="p2" dataProvider="{actionMenu}" itemClick="itemClickHandler(event);" labelField="@label" width="160" />
+		<mx:ComboBox id="pagesMenu" dataProvider="{pageNums}" width="55" close="pageChange(event);" rowCount="20" />
+		<mx:Spacer width="100%" />
+		<mx:Button label="Update Me" click="updateMe();" />
+		<mx:Button label="Fullscreen" click="showFull();" />
+		<mx:Button label="Save All" click="PageElements.saveAll();" />
+		<mx:Button label="Fermer" click="closeCall();" />
+	</mx:ApplicationControlBar>
+	<mx:Panel id="magPanel" borderStyle="none" horizontalAlign="center" headerHeight="0" backgroundAlpha="0" click="panelClick(event)">
+		<!-- TITLE -->
+		<mx:HBox width="500">
+			<mx:Label text="Titre :" click="changeTitleLabel();"/>
+			<mx:TextArea id="titleTextInput" text="" click="changeTitleLabel();" editable="false" height="20" width="100%" />
+			<mx:Button id="validTitleBtn" label="Valider" click="saveNewTitle();" visible="false"/>
+		</mx:HBox>
+
+		<mx:Canvas id="panel" clipContent="false" backgroundAlpha="1" backgroundColor="0xFFFFFF" width="960" height="540">
+			<mx:SWFLoader source="@Embed('lib/temp1.swf')" name="stageLoader"/>
+			<!-- RICH TEXT EDITOR -->
+			<mx:RichTextEditor name="stageRte" id="rte" visible="false" borderThicknessLeft="2" borderThicknessRight="2" borderThicknessTop="2" y="-30" x="10" borderStyle="none"
+			headerHeight="0" backgroundColor="0x333333" paddingLeft="0" paddingRight="0" textAreaStyleName="" />
+		</mx:Canvas>
+	</mx:Panel>
+	<mx:TextArea width="960" height="20" id="DEBUG" />
+</mx:WindowedApplication>
