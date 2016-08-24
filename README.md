@@ -1,6 +1,6 @@
 # CricEngine
 
-Developed in 2009-2010 by Thomas MALICET, CricEngine is a publishing software for online magazines, publications etc.
+Developed in 2009-2010 by ![Thomas MALICET](http://www.thomasmalicet.com), CricEngine is a publishing software for online magazines, publications etc.
 
 Functionalities
 - text editor and layout manipulation
